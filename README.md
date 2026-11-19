@@ -1,31 +1,33 @@
 # Skaalalauta
 
-Interaktiivinen **kitaran otelauta** selaimessa: skaalat, soinnut, nuottitunnistus mikrofonilla / USB-audiolla, harjoitukset ja metronomi.
+Interaktiivinen kitaran otelauta, skaalat, soinnut, nuottitunnistus mikrofonilla ja harjoitukset.
 
-**Live (kun Pages päällä):** https://pekunalle.github.io/skaalalauta/
+**Repo:** https://github.com/pekunalle/skaalalauta  
+**Vercel:** Import this repo after uploading the full `index.html` (see below).
 
-## Nopea käyttöönotto
+## Täyden appin saaminen repoon (15 sekuntia)
 
-1. Lataa täysi `index.html` (single-file) projektin artifacts-kansiosta tai käytä alla olevaa.
-2. GitHub-repon **Add file → Upload files** → vedä `index.html` → Commit.
-3. **Settings → Pages** → Source: Deploy from a branch → `main` / root → Save.
-4. Odota 1–2 min → avaa https://pekunalle.github.io/skaalalauta/
+Työkalurajoituksen takia 100 kt:n single-file HTML ei mennyt automaattisesti. Tee näin:
+
+1. Avaa tämä repo GitHubissa.
+2. **Add file → Upload files**
+3. Vedä tiedosto **`index.html`** projektin kansiosta `artifacts/skaalalauta/index.html` (tai zipistä).
+4. Commit changes.
+
+Sen jälkeen:
+- GitHub Pages: Settings → Pages → main / root
+- **Vercel**: New Project → Import `pekunalle/skaalalauta` → Deploy (toimii heti single-filella)
+
+## Vaihtoehto: jaettu versio
+
+Jos haluat erilliset tiedostot, lataa `artifacts/skaalalauta/dist/` (index.html + style.css + app.js) ja uploadaa kaikki kolme.
 
 ## Ominaisuudet
 
 - Otelauta + skaalat / soinnut
-- Laaja skaalakirjasto (moodit, metal, exotic, jazz) + bändihaku
-- Nuottitunnistus klikkaamalla tai mikrofonilla
-- Kuuntelu + nuottijahti
-- Reenit + metronomi + edistyminen (localStorage)
-- Viritykset, vasuri, gain, USB-audio
-
-## Tiedostot
-
-Tällä hetkellä repossa on skeleton. Korvaa `index.html` täydellä single-file-versiolla (noin 100 kt) artifactsista.
-
-Tai käytä jaettua versiota: `index.html` + `style.css` + `app.js` (löytyvät artifacts/skaalalauta/dist/).
-
-## Lisenssi
+- Laaja skaalakirjasto + bändihaku
+- Nuottitunnistus + mikrofoni / USB
+- Reenit + metronomi
+- Viritykset, vasuri, gain
 
 MIT
